@@ -1,5 +1,20 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Threat intel</title>
-</head>
+  <head>
+    <title>Threat intel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body onload="main()">
+    <div class="wrap">
+      <h2 style="text-align: center;">Threat Intel search</h2>
+      <div class="search">
+        <input type="text" class="searchTerm" placeholder="Ip,hash,fqdn,cve" name="search" id="search">
+        <button type="submit" class="searchButton" onclick="main()">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </body>
 </html>

@@ -6,9 +6,12 @@ function main() {
             get: (searchParams, prop) => searchParams.get(prop),
         });
         search=params.search
+        document.getElementById("search").value = search;
+
     }
     if (search)
         open_threat_intel(search)
+
   }
 
   function open_threat_intel(search) {
